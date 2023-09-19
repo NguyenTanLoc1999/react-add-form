@@ -16,15 +16,13 @@ function FormInput() {
   const handleClickSelect = (value) => {
     setCity(value)
   }
-
-  console.log(major);
   return (
     <form className="row g-3 needs-validation p-5" novalidate>
       <div className='row'>
         <div className="col-md-2 text-left">
           <label for="validationCustom01" className="form-label">Họ và Tên</label>
         </div>
-        <div className="col-md-10">
+        <div className="col-md-5">
           <input type="text" className="form-control" id="validationCustom01" required />
         </div>
       </div>
@@ -96,7 +94,7 @@ function FormInput() {
       </div>
 
       {
-        major ==='Kinh doanh dịch vụ' ? (
+        major === 'Kinh doanh dịch vụ' ? (
           <div className='row'>
             <div className="col-md-2">
               <label for="validationCustom01" className="form-label">Chức danh công việc</label>
