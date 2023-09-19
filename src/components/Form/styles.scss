@@ -1,0 +1,43 @@
+.bootstrap-select {
+  width: 100% !important;
+  height: 34px;
+  background-color: white;
+
+  .dropdown-toggle {
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+
+.selectpicker {
+  display: block !important;
+}
+
+#selectHometown {
+  display: block !important;
+  width: 100% !important;
+  height: 34px;
+  background-color: white;
+
+  .dropdown-toggle {
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+
+#selectProvince {
+  display: block !important;
+  width: 100% !important;
+  height: 34px;
+  background-color: white;
+
+  .dropdown-toggle {
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+
+option {
+  font-size: 1rem;
+  color: black;
+}
