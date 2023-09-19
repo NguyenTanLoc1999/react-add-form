@@ -1,8 +1,8 @@
-import {useState} from 'react';
+import { useState} from 'react';
 import './styles.scss';
 function FormInput() {
   const [validated, setValidated] = useState(false);
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState(-1);
   const [major, setMajor] = useState('');
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -26,7 +26,8 @@ function FormInput() {
           <input type="text" className="form-control" id="validationCustom01" required />
         </div>
       </div>
-      <div className='row'>
+
+      <div className='row align-items-center'>
         <div className="col-md-2">
           <label for="validationCustom01" className="form-label">Nơi ở hiện tại</label>
         </div>
@@ -39,7 +40,7 @@ function FormInput() {
         {
           city === 'HCM' ? (
             <div className="col-md-5" >
-              <select title='Quận/huyện' id='selectProvince' className="selectpicker" data-live-search="true" required>
+              <select title='Quận/huyện' id='selectProvince' className="selectpicker form-select" data-live-search="true" required>
                 <option value='Q.Tân Phú'>Q.Tân Phú</option>
                 <option value='Q.Tân Bình'>Q.Tân Bình</option>
                 <option value='Q.Bình Tân'>Q.Bình Tân</option>
@@ -48,7 +49,7 @@ function FormInput() {
           ) : city === 'Đồng Nai' ?
 
             (<div className="col-md-5">
-              <select title='Quận/huyện' id='selectProvince' className="selectpicker" data-live-search="true" required>
+              <select title='Quận/huyện' id='selectProvince' className="selectpicker form-select" data-live-search="true" required>
                 <option value='Tp Biên Hòa'>Tp Biên Hòa</option>
                 <option value='H.Long Thành'>H.Long Thành</option>
                 <option value='H.Xuân Lộc'>H.Xuân Lộc</option>
@@ -100,7 +101,7 @@ function FormInput() {
               <label for="validationCustom01" className="form-label">Chức danh công việc</label>
             </div>
             <div className="col-md-5">
-              <select title='Chức danh công việc' id='selectHometown' className="selectpicker" data-live-search="true" required>
+              <select title='Chức danh công việc' id='selectHometown' className="selectpicker form-control" data-live-search="true" required>
                 <option value='Giám đốc kinh doanh'>Giám đốc kinh doanh</option>
                 <option value='Nhân viên kinh doanh'>Nhân viên kinh doanh</option>
               </select>
@@ -112,7 +113,7 @@ function FormInput() {
               <label for="validationCustom01" className="form-label">Chức danh công việc</label>
             </div>
             <div className="col-md-5">
-              <select title='Chức danh công việc' id='selectHometown' className="selectpicker" data-live-search="true" required>
+              <select title='Chức danh công việc' id='selectHometown' className="selectpicker form-control" data-live-search="true" required>
                 <option value='Frontend Developer'>Frontend Developer</option>
                 <option value='Backend Developer'>Backend Developer</option>
               </select>
